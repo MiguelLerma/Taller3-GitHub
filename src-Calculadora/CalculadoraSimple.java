@@ -131,7 +131,7 @@ public class CalculadoraSimple extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn_sumaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_sumaActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_btn_sumaActionPerformed
 
     private void btn_restaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_restaActionPerformed
@@ -139,11 +139,19 @@ public class CalculadoraSimple extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_restaActionPerformed
 
     private void btn_multiplicacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_multiplicacionActionPerformed
-        // TODO add your handling code here:
+        try{
+        txt_resultado.setText(Integer.toString(Integer.parseInt(txt_valor1.getText().toString())*Integer.parseInt(txt_valor2.getText().toString())));
+        }catch(Exception e){
+            e.printStackTrace();
+        }
     }//GEN-LAST:event_btn_multiplicacionActionPerformed
 
     private void btn_divisionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_divisionActionPerformed
-        // TODO add your handling code here:
+        try{
+        txt_resultado.setText(Integer.toString(Integer.parseInt(txt_valor1.getText().toString())/Integer.parseInt(txt_valor2.getText().toString())));
+        }catch(Exception e){
+            e.printStackTrace();
+        }
     }//GEN-LAST:event_btn_divisionActionPerformed
 
     /**
